@@ -1,6 +1,6 @@
 # Generates the contribution snake used by the README.
-# Place this file in your profile repo at:  .github/workflows/snake.yml
-# The repo must be named exactly "ManavEquinox" (same as your username).
+# Runs automatically: daily at midnight UTC, or manually from the Actions tab
+# (Actions -> Generate Snake -> Run workflow).
 name: Generate Snake
 
 on:
@@ -9,7 +9,7 @@ on:
   workflow_dispatch: {}
   push:
     branches:
-      - main
+      - master
 
 permissions:
   contents: write
